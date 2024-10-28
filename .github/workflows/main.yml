@@ -19,7 +19,7 @@ jobs:
         uses: actions/setup-java@v2
         with:
           java-version: '17'
-          distribution: 'amazon-corretto'  # Use 'amazon-corretto' instead of 'corretto'
-
+          distribution: 'corretto'  
+          
       - name: Build and Test with Maven
         run: mvn -f simple-api/pom.xml clean verify
