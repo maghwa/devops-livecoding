@@ -155,7 +155,7 @@ jobs:
 
 ⭐️ PS: It's validated
 
-<img width="1180" alt="image" src="https://github.com/user-attachments/assets/426149ce-4f3b-40fb-b17d-f0a0d8e90546">
+<img width="625" alt="image" src="https://github.com/user-attachments/assets/426149ce-4f3b-40fb-b17d-f0a0d8e90546">
 
 
 
@@ -171,7 +171,7 @@ jobs:
 
 ⭐️ The Quality Gate in SonarCloud was configured to check metrics such as code coverage, maintainability, reliability, and security. If any thresholds are not met, the build fails, enforcing a standard for code quality.
 
-### ❓Document your quality gate configuration.
+### ❓Documenting the quality gate configuration.
 
 
 ⭐️ here's my snippet of code for the main.yaml :
@@ -250,6 +250,11 @@ jobs:
 
 <img width="625" alt="image" src="https://github.com/user-attachments/assets/668042df-efb2-4ec2-893c-6097f9cd221f">
 
+
+in SonarCloud:
+
+
+<img width="625" alt="image" src="https://github.com/user-attachments/assets/e57239cc-a414-467b-9923-a45bbad11d89">
 
 
 
