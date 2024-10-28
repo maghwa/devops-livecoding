@@ -24,6 +24,14 @@ jobs:
       - name: Build and Test with Maven
         run: mvn -f simple-api/pom.xml clean verify
 
+      - name: Build and Test with Sonar
+        run: mvn -B verify sonar:sonar 
+          -Dsonar.projectKey=maghwa_devops-livecoding
+          -Dsonar.organization=maghwa
+          -Dsonar.host.url=https://sonarcloud.io 
+          -Dsonar.login=${{ secrets.SONAR_TOKEN }}  --file ./simple-api/pom.xml
+
+
   build-and-push-docker-image:
     needs: build-and-test
     runs-on: ubuntu-22.04
