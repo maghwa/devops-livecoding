@@ -19,7 +19,7 @@ jobs:
         uses: actions/setup-java@v2
         with:
           java-version: '17'
-          distribution: 'temurin'  # Specify the JDK distribution
+          distribution: 'amazoncorretto'  # Specify the JDK distribution
 
       - name: Build and Test with Maven
         run: mvn -f simple-api/pom.xml clean verify
