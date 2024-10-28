@@ -33,3 +33,6 @@ jobs:
           -Dsonar.projectKey=maghwa_devops-livecoding
           -Dsonar.organization=maghwa
           -Dsonar.login=${{ secrets.SONAR_TOKEN }}
+          --file ./simple-api/pom.xml
+
+
