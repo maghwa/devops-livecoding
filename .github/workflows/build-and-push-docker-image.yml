@@ -22,5 +22,5 @@ jobs:
 
       #finally build your app with the latest comman
       - name: Build and test with Maven
-        run: mvn -B verify sonar:sonar -Dsonar.projectKey=EtienneGG27_TP2_DevOps -Dsonar.organization=etiennegg27 -Dsonar.host.url=https://sonarcloud.io -Dsonar.login=${{ secrets.SONAR_TOKEN }}  --file ./simple-api/pom.xml
+        run: mvn -B verify sonar:sonar -Dsonar.projectKey=maghwa_devops-livecoding -Dsonar.organization=maghwa -Dsonar.host.url=https://sonarcloud.io -Dsonar.login=${{ secrets.SONAR_TOKEN }}  --file ./simple-api/pom.xml
 
