@@ -1,0 +1,11 @@
+---
+- name: Run proxy container
+  docker_container:
+    name: httpd
+    image: maghwa88/tp-devops-http-server
+    ports:
+      - "80:80"
+    networks:
+      - name: my-network
+
+    state: started

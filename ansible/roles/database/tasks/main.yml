@@ -1,0 +1,13 @@
+- name: Run database container
+  docker_container:
+    name: my-db
+    image: maghwa88/tp-devops-database
+    env:
+      POSTGRES_USER: user
+      POSTGRES_PASSWORD: pwd
+      POSTGRES_DB: db
+    networks:
+      - name: my-network
+    volumes:
+      - db-volume:/var/lib/postgresql/data
+    state: started

@@ -1,0 +1,16 @@
+---
+- name: Run application container
+  docker_container:
+    name: my-api
+    image: maghwa88/tp-devops-simple-api
+    env:
+      DATABASE_HOST: my-db
+      DATABASE_PORT: "5342"
+      POSTGRES_DB: db
+      POSTGRES_USER: user
+      POSTGRES_PASSWORD: pwd
+
+    networks:
+      - name: my-network
+
+    state: started
